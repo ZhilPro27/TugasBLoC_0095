@@ -17,3 +17,7 @@ class AuthAuthenticated extends AuthState {
   List<Object?> get props => [email];
 }
 
+class AuthRegistered extends AuthState {}
+
+class AuthUnauthenticated extends AuthState {}
+
