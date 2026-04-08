@@ -39,5 +39,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
   }
 
-
+  void _onLogoutRequested(
+    LogoutRequested event,
+    Emitter<AuthState> emit,
+  ) {
+    emit(AuthUnauthenticated());
+  }
 }
