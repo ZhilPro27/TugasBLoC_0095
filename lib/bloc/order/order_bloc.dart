@@ -29,5 +29,7 @@ class OrderBloc extends Bloc<OrderEvent, OrderState> {
     ));
   }
 
-  
+  void _onOrderReset(OrderReset event, Emitter<OrderState> emit) {
+    emit(OrderInitial());
+  }
 }
