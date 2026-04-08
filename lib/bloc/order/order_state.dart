@@ -42,3 +42,10 @@ class OrderSuccess extends OrderState {
       ];
 }
 
+class OrderError extends OrderState {
+  final String message;
+  OrderError({required this.message});
+
+  @override
+  List<Object?> get props => [message];
+}
